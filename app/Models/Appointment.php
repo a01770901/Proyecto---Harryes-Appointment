@@ -1,0 +1,37 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Harryes\CrudPackage\Traits\HandlesQuery;
+use Illuminate\Http\Request;
+
+class Appointment extends Model
+{
+    use HasFactory, HandlesQuery;
+
+    protected $fillable = ['patient_name', 'doctor', 'date', 'notes', 'confirmed', 'duration'];
+
+    /**
+     * Perform actions after a resource is created.
+     *
+     * @param \Illuminate\Http\Request $request
+     * @return void
+     */
+    public function afterCreateProcess(Request $request): void
+    {
+        // Add custom logic here
+    }
+
+    /**
+     * Perform actions after a resource is updated.
+     *
+     * @param \Illuminate\Http\Request $request
+     * @return void
+     */
+    public function afterUpdateProcess(Request $request): void
+    {
+        // Add custom logic here
+    }
+}
