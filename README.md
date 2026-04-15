@@ -123,14 +123,6 @@ http://harryes-appointment.test
 
 ---
 
-##  Endpoint extra
-
-| Método | Endpoint                          | Descripción                  |
-|--------|----------------------------------|------------------------------|
-| GET    | /api/appointments/confirmed      | Citas confirmadas            |
-
----
-
 ##  Ejemplo POST
 
 ```json
