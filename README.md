@@ -122,6 +122,8 @@ app/Http/Resources/AppointmentResource.php
 database/migrations/xxxx_create_appointments_table.php
 routes/api.php  (ruta apiResource agregada automaticamente)
 
+A diferencia del ejemplo original enfocado en usuarios, este proyecto implementa un sistema de gestión de citas médicas, con atributos y lógica propios del dominio como duración, confirmación y fechas de consulta.
+
 
 Nota importante
 Si despues de instalar el paquete el archivo routes/api.php no existe (Laravel 11 no lo genera por defecto), crearlo manualmente con <?php al inicio o ejecutar php artisan install:api antes de correr la migracion.
